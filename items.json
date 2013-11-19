@@ -6,8 +6,38 @@
       "category": ["food","fruit"]
     },
     {
+      "title": "banana",
+      "img": ["banana.jpg"],
+      "category": ["food", "fruit"]
+    },
+    {
+      "title": "ball",
+      "img": ["ball.jpg"],
+      "category": ["fun"]
+    },
+    {
+      "title": "car",
+      "img": ["car.jpg"],
+      "category": ["vehicles"]
+    },
+    {
       "title": "cat",
       "img": ["cat.jpg","cat1.jpg"],
+      "category": ["animals"]
+    },
+    {
+      "title": "dog",
+      "img": ["dog.jpg"],
+      "category": ["animals"]
+    },
+    {
+      "title": "duck",
+      "img": ["duck.jpg"],
+      "category": ["animals"]
+    },
+    {
+      "title": "fish",
+      "img": ["fish.jpg"],
       "category": ["animals"]
     },
     {
