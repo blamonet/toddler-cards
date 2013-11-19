@@ -8,6 +8,19 @@
     <script src="js/lib/frameworks/jquery/jquery.min.js"></script>
     <script src="js/lib/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
     <script type="text/javascript">
+      var dictionary = {};
+      var currentWord = 0;
+      function nextWord() {
+        var newWord = currentWord;
+        while (newWord == currentWord) {
+          newWord=Math.floor(Math.random()*dictionary.length);
+        }
+        currentWord = newWord;
+        var entry = dictionary[currentWord];
+        $(".word").html(entry.title);
+        var image = entry.img[Math.floor(Math.random()*entry.img.length)];
+        $(".wordImage img").attr("src","img/" + image);
+      }
       function addCategory(categoryName) {
         var option = "<option>" + categoryName + "</option>";
         $(".categorySelector").append(option);
@@ -15,13 +28,14 @@
       $(document).ready(function() {
           $(".categorySelector").append('<option>all</option>');
           $.getJSON("items.json", function (data) {
-            var dictionary = data.dictionary;
+            dictionary = data.dictionary;
             $.each(dictionary, function(i, item) {
               $.each(item.category, function(j, category) {
                   addCategory(category);
               });
             });
-            var entry = dictionary[Math.floor(Math.random()*dictionary.length)];
+            currentWord=Math.floor(Math.random()*dictionary.length);
+            var entry = dictionary[currentWord];
             $(".word").html(entry.title);
             var image = entry.img[Math.floor(Math.random()*entry.img.length)];
             $(".wordImage img").attr("src","img/" + image);
@@ -50,7 +64,7 @@
         <div class="navbar-header">
           <a class="navbar-brand" style="color:#F26B30" href="/">Toddler Cards</a>
         </div>
-        <a class="btn btn-primary btn-sm pull-right" href="javascript:history.go(0)">Next</a>
+        <a class="btn btn-primary btn-sm pull-right" href="javascript:nextWord()">Next</a>
       </div>
     </div>
 <!-- not implemented yet    <div class="container categories">
