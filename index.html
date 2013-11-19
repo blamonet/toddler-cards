@@ -3,14 +3,64 @@
     <title>
       Toddler Cards
     </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="js/lib/twbs/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="js/lib/fortawesome/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/lib/frameworks/jquery/jquery.min.js"></script>
     <script src="js/lib/twbs/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      function addCategory(categoryName) {
+        var option = "<option>" + categoryName + "</option>";
+        $(".categorySelector").append(option);
+      }
+      $(document).ready(function() {
+          $(".categorySelector").append('<option>all</option>');
+          $.getJSON("items.json", function (data) {
+            var dictionary = data.dictionary;
+            $.each(dictionary, function(i, item) {
+              $.each(item.category, function(j, category) {
+                  addCategory(category);
+              });
+            });
+            var entry = dictionary[Math.floor(Math.random()*dictionary.length)];
+            $(".word").html(entry.title);
+            var image = entry.img[Math.floor(Math.random()*entry.img.length)];
+            $(".wordImage img").attr("src","img/" + image);
+          });  
+        });  
+      </script>
+      <style type="text/css">
+        .navbar {
+          margin-bottom: 0px;
+        }
+        .word {
+          text-align:center;
+          text-shadow: 2px 2px #eee;
+        }
+        .wordImage img {
+          box-shadow: 5px 5px #dedede;
+          border: 5px solid #000;
+          margin: 0 auto;
+        }
+      </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div id="container">
+    <div class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" style="color:#F26B30" href="/">Toddler Cards</a>
+        </div>
+        <a class="btn btn-primary btn-sm pull-right" href="javascript:history.go(0)">Next</a>
+      </div>
+    </div>
+<!-- not implemented yet    <div class="container categories">
+      <select class="categorySelector">
+      </select>
+    </div>
+-->
+    <div class="container card col-md-12">
+      <h1 class="word"></h1>
+      <div class="wordImage"><img src="" class="img-responsive" /></div>
     </div>
   </body>
 </html>

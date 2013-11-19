@@ -1,33 +1,19 @@
 { 
-  "dictionary": {
-    "item": {
+  "dictionary": [
+    {
       "title": "apple",
-      "img": {
-        "apple.png"
-      },
-      "category": {
-        "food",
-        "fruit"
-      }
+      "img": ["apple.jpg"],
+      "category": ["food","fruit"]
     },
-    "item": {
+    {
       "title": "cat",
-      "img": {
-        "cat.jpg",
-        "cat1.jpg"
-      },
-      "category": {
-        "animals"
-      }
+      "img": ["cat.jpg","cat1.jpg"],
+      "category": ["animals"]
     },
-    "item": {
+    {
       "title": "train",
-      "img": {
-        "train.jpg"
-      },
-      "category": {
-        "vehicles"
-      }
+      "img": ["train.jpg"],
+      "category": ["vehicles"]
     }
-  }
+  ]
 }
