@@ -1,0 +1,33 @@
+{ 
+  "dictionary": {
+    "item": {
+      "title": "apple",
+      "img": {
+        "apple.png"
+      },
+      "category": {
+        "food",
+        "fruit"
+      }
+    }
+    "item": {
+      "title": "cat",
+      "img": {
+        "cat.jpg",
+        "cat1.jpg"
+      },
+      "category": {
+        "animals"
+      }
+    },
+    "item": {
+      "title": "train",
+      "img": {
+        "train.jpg"
+      },
+      "category": {
+        "vehicles"
+      }
+    }
+  }
+}
