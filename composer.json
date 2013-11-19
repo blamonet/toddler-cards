@@ -1,0 +1,10 @@
+{
+    "require": {
+       "twbs/bootstrap": "3.0.*@dev",
+       "fortawesome/font-awesome": "v3.2.1",
+       "frameworks/jquery": "dev-master"
+    },
+    "config": {
+        "vendor-dir": "js/lib"
+    }
+}
