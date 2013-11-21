@@ -60,23 +60,28 @@
         .word {
           text-align:center;
           text-shadow: 2px 2px #eee;
+          font-size: 5em;
         }
         .wordImage img {
           box-shadow: 5px 5px #dedede;
           border: 5px solid #000;
           margin: 0 auto;
         }
+        .card {
+          margin-top:30px;
+        }
+        .wordImage img {
+          height:80%;
+        }
       </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="navbar navbar-inverse" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
+    <div class="navbar navbar-fixed-top active navbar-inverse" role="navigation">
           <a class="navbar-brand" style="color:#F26B30" href="/">Toddler Cards</a>
-        </div>
-        <a class="btn btn-primary btn-sm pull-right" href="javascript:nextWord()">Next</a>
-      </div>
+          <div class="nav navbar-form navbar-right">
+            <a class="btn btn-primary" href="javascript:nextWord()">Next</a>
+          </div>
     </div>
 <!-- not implemented yet    <div class="container categories">
       <select class="categorySelector">
