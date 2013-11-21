@@ -15,6 +15,10 @@
     <script type="text/javascript">
       var dictionary = {};
       var currentWord = 0;
+      function playSound() {
+        var audio = $("#mysoundclip")[0];
+        audio.play();
+      }
       function nextWord() {
         var newWord = currentWord;
         while (newWord == currentWord) {
@@ -22,7 +26,13 @@
         }
         currentWord = newWord;
         var entry = dictionary[currentWord];
-        $(".word").html(entry.title);
+        var sound = "";
+        var sound_audio_tag = "";
+        if (entry.sound && entry.sound.length > 0) {
+        var sound_audio_tag = "<audio id=\"mysoundclip\" preload=\"auto\"><source src=\"sounds/" + entry.sound[0] + "\"></source></audio>"
+        var sound = "<button class=\"btn btn-primary\" onclick=\"playSound()\"><i class=\"icon icon-bell\"></i>";
+        }
+        $(".word").html(entry.title + " " + sound + sound_audio_tag);
         var image = entry.img[Math.floor(Math.random()*entry.img.length)];
         $(".wordImage img").attr("src","img/" + image);
       }
@@ -41,7 +51,13 @@
             });
             currentWord=Math.floor(Math.random()*dictionary.length);
             var entry = dictionary[currentWord];
-            $(".word").html(entry.title);
+            var sound = "";
+            var sound_audio_tag = "";
+            if (entry.sound && entry.sound.length > 0) {
+            var sound_audio_tag = "<audio id=\"mysoundclip\" preload=\"auto\"><source src=\"sounds/" + entry.sound[0] + "\"></source></audio>"
+            var sound = "<button class=\"btn btn-primary\" onclick=\"playSound()\"><i class=\"icon icon-bell\"></i>";
+            }
+            $(".word").html(entry.title + " " + sound + sound_audio_tag);
             var image = entry.img[Math.floor(Math.random()*entry.img.length)];
             $(".wordImage img").attr("src","img/" + image);
           });  
@@ -52,6 +68,7 @@
             nextWord();
           }
         });
+
       </script>
       <style type="text/css">
         .navbar-form {

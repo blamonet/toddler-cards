@@ -18,6 +18,7 @@
     {
       "title": "bird",
       "img": ["bird.jpg"],
+      "sound": ["bird_chirp.wav"],
       "category": ["animals"]
     },
     {
@@ -28,6 +29,7 @@
     {
       "title": "cat",
       "img": ["cat.jpg","cat1.jpg"],
+      "sound": ["cat_meow.wav"],
       "category": ["animals"]
     },
     {
