@@ -24,6 +24,7 @@
     {
       "title": "car",
       "img": ["car.jpg"],
+      "sound": ["car.wav"],
       "category": ["vehicles"]
     },
     {
@@ -35,21 +36,25 @@
     {
       "title": "chicken",
       "img": ["chicken.jpg"],
+      "sound": ["chicken.wav"],
       "category": ["animals"]
     },
     {
       "title": "cow",
       "img": ["cow.jpg"],
+      "sound": ["cow.wav"],
       "category": ["animals"]
     },
     {
       "title": "dog",
       "img": ["dog.jpg"],
+      "sound": ["dog.wav"],
       "category": ["animals"]
     },
     {
       "title": "duck",
       "img": ["duck.jpg"],
+      "sound": ["duck_quack.wav"],
       "category": ["animals"]
     },
     {
@@ -70,6 +75,7 @@
     {
       "title": "train",
       "img": ["train.jpg"],
+      "sound": ["train_crossing.wav"],
       "category": ["vehicles"]
     }
   ]
