@@ -54,8 +54,10 @@
         });
       </script>
       <style type="text/css">
-        .navbar {
-          margin-bottom: 0px;
+        .navbar-form {
+          padding:0px;
+          padding-right:20px;
+          margin-bottom:0px;
         }
         .word {
           text-align:center;
@@ -70,17 +72,14 @@
         .card {
           margin-top:30px;
         }
-        .wordImage img {
-          height:80%;
-        }
       </style>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
   </head>
   <body>
-    <div class="navbar navbar-fixed-top active navbar-inverse" role="navigation">
+    <div class="navbar navbar-fixed-top navbar-inverse" role="navigation">
           <a class="navbar-brand" style="color:#F26B30" href="/">Toddler Cards</a>
-          <div class="nav navbar-form navbar-right">
-            <a class="btn btn-primary" href="javascript:nextWord()">Next</a>
+          <div class="navbar-form navbar-right">
+            <a class="btn btn-primary pull-right" href="javascript:nextWord()">Next <i class="icon icon-double-angle-right"></i></a>
           </div>
     </div>
 <!-- not implemented yet    <div class="container categories">
