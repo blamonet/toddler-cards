@@ -16,6 +16,11 @@
       "category": ["fun"]
     },
     {
+      "title": "bird",
+      "img": ["bird.jpg"],
+      "category": ["animals"]
+    },
+    {
       "title": "car",
       "img": ["car.jpg"],
       "category": ["vehicles"]
@@ -23,6 +28,16 @@
     {
       "title": "cat",
       "img": ["cat.jpg","cat1.jpg"],
+      "category": ["animals"]
+    },
+    {
+      "title": "chicken",
+      "img": ["chicken.jpg"],
+      "category": ["animals"]
+    },
+    {
+      "title": "cow",
+      "img": ["cow.jpg"],
       "category": ["animals"]
     },
     {
@@ -39,6 +54,16 @@
       "title": "fish",
       "img": ["fish.jpg"],
       "category": ["animals"]
+    },
+    {
+      "title": "moon",
+      "img": ["moon.jpg"],
+      "category": ["space"]
+    },
+    {
+      "title": "tree",
+      "img": ["tree.jpg"],
+      "category": ["plants"]
     },
     {
       "title": "train",
