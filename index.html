@@ -46,6 +46,12 @@
             $(".wordImage img").attr("src","img/" + image);
           });  
         });  
+        $(document).keypress(function(e) {
+          var code = (e.keyCode ? e.keyCode : e.which);
+          if(code == 13 || code == 32) { //Enter keycode or space
+            nextWord();
+          }
+        });
       </script>
       <style type="text/css">
         .navbar {
