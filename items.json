@@ -46,6 +46,12 @@
       "category": ["animals"]
     },
     {
+      "title": "donkey",
+      "img": ["donkey.jpg"],
+      "sound": ["donkey.wav"],
+      "category": ["animals"]
+    },
+    {
       "title": "dog",
       "img": ["dog.jpg"],
       "sound": ["dog.wav"],
@@ -63,9 +69,33 @@
       "category": ["animals"]
     },
     {
+      "title": "frog",
+      "img": ["frog.jpg"],
+      "sound": ["frog.wav"],
+      "category": ["animals"]
+    },
+    {
+      "title": "horse",
+      "img": ["horse.jpg"],
+      "sound": ["horse.wav"],
+      "category": ["animals"]
+    },
+    {
       "title": "moon",
       "img": ["moon.jpg"],
       "category": ["space"]
+    },
+    {
+      "title": "monkey",
+      "img": ["monkey.jpg"],
+      "sound": ["monkey.wav"],
+      "category": ["animals"]
+    },
+    {
+      "title": "pig",
+      "img": ["pig.jpg"],
+      "sound": ["pig.wav"],
+      "category": ["animals"]
     },
     {
       "title": "tree",
