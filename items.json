@@ -24,7 +24,7 @@
     {
       "title": "car",
       "img": ["car.jpg"],
-      "sound": ["car.wav"],
+      "sound": ["car.mp3"],
       "category": ["vehicles"]
     },
     {
@@ -42,19 +42,19 @@
     {
       "title": "cow",
       "img": ["cow.jpg"],
-      "sound": ["cow.wav"],
+      "sound": ["cow.mp3"],
       "category": ["animals"]
     },
     {
       "title": "donkey",
       "img": ["donkey.jpg"],
-      "sound": ["donkey.wav"],
+      "sound": ["donkey.mp3"],
       "category": ["animals"]
     },
     {
       "title": "dog",
       "img": ["dog.jpg"],
-      "sound": ["dog.wav"],
+      "sound": ["dog.mp3"],
       "category": ["animals"]
     },
     {
@@ -71,13 +71,13 @@
     {
       "title": "frog",
       "img": ["frog.jpg"],
-      "sound": ["frog.wav"],
+      "sound": ["frog.mp3"],
       "category": ["animals"]
     },
     {
       "title": "horse",
       "img": ["horse.jpg"],
-      "sound": ["horse.wav"],
+      "sound": ["horse.mp3"],
       "category": ["animals"]
     },
     {
@@ -88,13 +88,13 @@
     {
       "title": "monkey",
       "img": ["monkey.jpg"],
-      "sound": ["monkey.wav"],
+      "sound": ["monkey.mp3"],
       "category": ["animals"]
     },
     {
       "title": "pig",
       "img": ["pig.jpg"],
-      "sound": ["pig.wav"],
+      "sound": ["pig.mp3"],
       "category": ["animals"]
     },
     {
@@ -105,7 +105,7 @@
     {
       "title": "train",
       "img": ["train.jpg"],
-      "sound": ["train_crossing.wav"],
+      "sound": ["train_crossing.mp3"],
       "category": ["vehicles"]
     }
   ]
