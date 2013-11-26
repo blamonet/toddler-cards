@@ -35,7 +35,8 @@ $(document).ready(function() {
     dictionary = data.dictionary;
     $.each(dictionary, function(i, item) {
       $.each(item.category, function(j, category) {
-          addCategory(category);
+        // need to check if category doesn't exist before adding
+        addCategory(category);
       });
     });
     nextWord();
