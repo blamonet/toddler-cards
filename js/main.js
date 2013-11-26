@@ -29,14 +29,25 @@ function addCategory(categoryName) {
   $(".categorySelector").append(option);
 }
 
+function categoryInList(categoryName) {
+  var found = 0;
+  $(".categorySelector > option").each(function() {
+    if (this.text == categoryName) {
+      found = 1;
+    }
+  });
+  return found;
+}
+
 $(document).ready(function() {
   $(".categorySelector").append('<option>all</option>');
   $.getJSON("items.json", function (data) {
     dictionary = data.dictionary;
     $.each(dictionary, function(i, item) {
       $.each(item.category, function(j, category) {
-        // need to check if category doesn't exist before adding
-        addCategory(category);
+        if (!categoryInList(category)) {
+          addCategory(category);
+        }
       });
     });
     nextWord();
