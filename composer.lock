@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "9c6f4532bb03011dfa2bd4181103ad25",
+    "hash": "0d7a6c9581744e313b122c172cd523a8",
     "packages": [
         {
             "name": "fortawesome/font-awesome",
@@ -77,17 +77,57 @@
             "time": "2013-07-10 19:39:27"
         },
         {
+            "name": "mrclay/minify",
+            "version": "2.1.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/mrclay/minify.git",
+                "reference": "db7fe244932ea77cf1438965693672ea12b33da8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/mrclay/minify/zipball/db7fe244932ea77cf1438965693672ea12b33da8",
+                "reference": "db7fe244932ea77cf1438965693672ea12b33da8",
+                "shasum": ""
+            },
+            "require": {
+                "ext-pcre": "*",
+                "php": ">=5.2.1"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "min/lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Steve Clay",
+                    "email": "steve@mrclay.org",
+                    "homepage": "http://www.mrclay.org/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Minify is a PHP5 app that helps you follow several rules for client-side performance. It combines multiple CSS or Javascript files, removes unnecessary whitespace and comments, and serves them with gzip encoding and optimal client-side cache headers",
+            "homepage": "http://code.google.com/p/minify/",
+            "time": "2013-07-23 19:58:28"
+        },
+        {
             "name": "twbs/bootstrap",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twbs/bootstrap.git",
-                "reference": "ee1c53dca054137e196467b8ca3a0ef96f74f64d"
+                "reference": "27abfba89fd91f788fa9621237fe7c6b20ca6c3f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/ee1c53dca054137e196467b8ca3a0ef96f74f64d",
-                "reference": "ee1c53dca054137e196467b8ca3a0ef96f74f64d",
+                "url": "https://api.github.com/repos/twbs/bootstrap/zipball/27abfba89fd91f788fa9621237fe7c6b20ca6c3f",
+                "reference": "27abfba89fd91f788fa9621237fe7c6b20ca6c3f",
                 "shasum": ""
             },
             "type": "library",
@@ -116,7 +156,7 @@
                 "bootstrap",
                 "css"
             ],
-            "time": "2013-11-18 09:57:56"
+            "time": "2013-11-26 17:20:56"
         }
     ],
     "packages-dev": [
