@@ -64,15 +64,36 @@
       "category": ["animals"]
     },
     {
+      "title": "earth",
+      "img": ["earth.jpg"],
+      "category": ["space"]
+    },
+    {
+      "title": "fire truck",
+      "img": ["fire_truck.jpg"],
+      "sound": ["fire_truck.wav"],
+      "category": ["vehicles"]
+    },
+    {
       "title": "fish",
       "img": ["fish.jpg"],
       "category": ["animals"]
+    },
+    {
+      "title": "flower",
+      "img": ["flower.jpg"],
+      "category": ["plants"]
     },
     {
       "title": "frog",
       "img": ["frog.jpg"],
       "sound": ["frog.mp3"],
       "category": ["animals"]
+    },
+    {
+      "title": "hot dog",
+      "img": ["hotdog.jpg"],
+      "category": ["food"]
     },
     {
       "title": "horse",
@@ -96,6 +117,12 @@
       "img": ["pig.jpg"],
       "sound": ["pig.mp3"],
       "category": ["animals"]
+    },
+    {
+      "title": "police car",
+      "img": ["police_car.jpg"],
+      "sound": ["police_car.wav"],
+      "category": ["vehicles"]
     },
     {
       "title": "tree",
